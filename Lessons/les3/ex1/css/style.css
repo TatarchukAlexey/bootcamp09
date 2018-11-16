@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 1125px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end;
+}
+
+.menu{
+    width: 467px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-link{
+    text-decoration: none; 
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #0f0101;    
+    text-transform: uppercase;   
+    font-weight: 800;
+}
+
+.menu-link:hover{
+    color: #1abc9c;  
+}
+
