@@ -1,54 +1,71 @@
-*{
-    margin: 0;
-    padding: 0;
+body {
+  font: 14px/24px "Playfair Display", serif;
+  color: #626262;
 }
-.head{ 
-    width: 400px;
-    height: 20px;
-    margin: 0 auto;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
+.container {
+  width: 900px;
+  margin: 0 auto;
 }
-.body {
-width: 1200;
-height: 2000;
+/* HEADER */
+.header {
+  margin-bottom: 95px;
 }
-.content {
-        margin: 0;
-    display: block;
+.header-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
-.inner-block1{
-    padding: 0 10px;
-    width: 440px;
-    height: 480px;
-    display: inline-block;
-    margin-left: 270px;
-   }
-.inner-block2{
-    padding: 0 10px;
-    width: 440px;
-    height: 480px;
-    float: right;
-    display: inline-block;
-    margin-right: 280px;
-   }
-.inner-phrase {
-    margin: 10 0 20px 0;
+.header-list__item {
+  display: inline-block;
 }
-img {
-    width: 430px;
+.header-list__item:not(:last-child) {
+  margin-right: 100px;
 }
-.photo {
-    background-image: url(../IMG/1.jpeg);
-    background-size: cover;
-    width: 400px;
-    height: 280px;
-    margin: 0;
-    border: solid 1px blue;
+.active-item {
+  color: #03a9f4;
 }
-.futer{
-    margin: auto
+.header-list__link {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
 }
-
+/* MAIN */
+.main-list {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+}
+.main-list__item {
+  float: left;
+  width: 420px;
+}
+.main-list__item:not(:nth-child(2n + 2)) {
+  margin-right: 50px;
+  margin-bottom: 85px;
+}
+.main-list__item:nth-child(5) {
+  margin-bottom: 0;
+}
+.main-list__img {
+  width: 100%;
+}
+.main-list__label {
+  font: 14px/17px "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #c7c1b6;
+  padding: 10px 5px 0;
+}
+.main-list__title {
+  font-size: 30px;
+  line-height: 36px;
+}
+.main-button {
+  display: block;
+  cursor: pointer;
+  color: inherit;
+  font: 20px/24px "Playfair Display", serif;
+  padding: 20px 35px;
+  background: none;
+  border: 1px solid #626262;
+  margin: auto;
+}
