@@ -1,0 +1,30 @@
+.wrapper{
+  width: 300px;
+  height: 200px;
+  background-color:red;
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+
+}
+.trans{
+  width: 300px;
+  height: 200px;
+  background-color:rgb(57, 21, 185);
+  position: absolute;
+  margin-left: -300px;
+  transition: all .5s linear;
+
+}
+.wrapper:hover .trans{
+
+  margin-left: 0;
+  transition: all .5s linear;
+
+  
+
+
+
+}
+
+

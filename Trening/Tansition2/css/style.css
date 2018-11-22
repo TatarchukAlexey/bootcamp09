@@ -1,0 +1,39 @@
+.wrapper{
+  width: 300px;
+  height: 200px;
+  background-color:red;
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+
+}
+.trans{
+  width: 150px;
+  height: 200px;
+  background-color:rgb(57, 21, 185);
+  position: absolute;
+  margin-left: -150px;
+  transition: all .5s linear;
+  left: 0;
+
+}
+.trans2{
+  width: 150px;
+  height: 200px;
+  background-color:rgb(155, 185, 21);
+  position: absolute;
+  margin-right: -150px;
+  transition: all .5s linear;
+  right: 0;
+}
+.wrapper:hover .trans{
+  transition: all .5s linear;
+  margin: 0%;
+
+}
+.wrapper:hover .trans2{
+  transition: all .5s linear;
+  margin: 0%;
+}
+
+

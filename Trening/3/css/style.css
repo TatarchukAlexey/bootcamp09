@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:500');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    padding-top: 104px;
+    position: relative;
+}
+.header-title{
+    font-size: 189px;
+    color: #eff0f1;
+    width: 740px;
+    margin: auto;
+    font-family: 'Poppins';
+    letter-spacing: 35px;
+    line-height: 189px;
+}
+.header-img{
+   position: absolute;
+   top: 128px;
+   left: 149px;
+}
+.header-logo{
+    font-family: "Playfair Display";
+    font-size: 60px;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    padding: 40px 40px 20px;
+    background-color: #80b7b3;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: -1px 13px 23px -1px rgba(177,177,177,0.98);
+}
+.first-section{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-top: 68px;
+    flex-wrap: wrap;
+}
+.section-img{
+    margin-left: 166px;
+    box-shadow: -32px 14px 123px -19px rgba(87,87,87,1);
+    border: 14px solid white;
+    margin-left: 132px;
+    position: relative;
+    display: block;
+
+}
+.overley{
+    position: absolute;
+    top: 0;
+    left: -129%;
+    width: 147%;
+    height: 69%;
+    background-color: #00000070;
+    transition: all .3s linear;
+
+}
+.first-section a{
+    text-decoration: none;
+}
+.first-section__article{
+    width: 442px;
+    }
+.section-link{
+    font-family: "Poppins";
+    color: #969da0;
+    font-size: 14px;
+}
+.section-title{
+    margin-top: 40px;
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    color: black;
+}
+.section-text{
+    margin-top: 80px;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    color: #b7bcbe;
+}
+.first-section__article p:nth-last-of-type(1){
+    margin-top: 60px;
+}
+.section-button{
+    display: block;
+    padding: 17px 0;
+    background-color: #80b7b3;
+    border-radius: 50px;
+    margin-top: 42px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    margin-bottom: 250px;
+}
+.section-button::after{
+    content: "\2192";
+    font-size: 22px;
+    color: white;
+    margin-left: 18px;
+    vertical-align: middle;
+}
+.wrapper-img{
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+.wrapper-img:hover .overley{
+left: 0;
+transition: all .3s linear;
+}
+
+
+.gap-img{
+    position: absolute;
+    border: 14px solid white;
+    top: 58px;
+    left: 0;
+}
+.header-logo:hover{
+    transition-property: top;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    top: -100%;
+    transition-delay: 0.5s;
+}
