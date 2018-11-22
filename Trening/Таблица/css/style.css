@@ -1,23 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script|Lobster');
 
+
+table {
+  border-collapse: collapse;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  margin: auto;
+}
+
+th {  font-weight: 100; }
+
+td, th {
+  padding: 5px;
+  border: 1px dashed var(--orange);
+}
+
+td {
+  text-align: left;
+}
+
 .wrapper {
-  width: 320px;
+  width: 480px;
   margin: auto;
   padding: 20px;
   text-align: center;
-  font-family: 'Lobster', cursive;
-  font-size: 20px;
-}
-
-tr, th, td, caption {
-  padding: 5px;
-  border: 1px var(--orange) solid;
-  font-weight: 100; 
-}
-
-caption, tr:nth-of-type(even) {
-  background-color: hsla(0, 50%, 0%, 0.2);
+  font-weight: 100;
 }
 
 tr:nth-of-type(odd) {
+  background-color: hsla(0, 50%, 0%, 0.1);
+}
+
+td:nth-of-type(2) {
+  font-family: 'Bad Script', cursive;
+}
+
+td[colspan="2"],
+td[rowspan="5"]
+{
   background-color: hsla(0, 50%, 100%, 0.1);

@@ -1,0 +1,277 @@
+*{
+  border: 1px solid #000;
+  }
+:root {
+  --main-color: #95e1d3;
+  --text-color: #999;
+  --title-color: #333;
+  --decor-color: #f38181;
+  --social-background: #fce38a;
+  --social-gradient: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.5) 0%,
+    rgba(243, 129, 129.5) 100%
+  );
+}
+@font-face {
+  font-family: "RobotoReg";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "RobotoLI";
+  src: url(../fonts/Roboto/Roboto-LightItalic.ttf);
+}
+@font-face {
+  font-family: "MontReg";
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "MontBold";
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Kaushan";
+  src: url(../fonts/Kaushan_Script/KaushanScript-Regular.ttf);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+/* HEADER */
+.header,
+.footer {
+  display: flex;
+  margin-bottom: 75px;
+}
+/* LOGO */
+.logo {
+  display: block;
+  padding-top: 15px;
+}
+/* MENU */
+.site-nav {
+  margin-left: auto;
+}
+.main-list,
+.service-list,
+.team-list {
+  display: flex;
+  list-style: none;
+}
+.main-list__item:not(:last-child) {
+  margin-right: 55px;
+}
+.main-list__link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: 14px/17px "MontReg", "Arial", sans-serif;
+  color: var(--main-color);
+  padding: 5px 0;
+  border-bottom: 3px solid transparent;
+}
+.main-list__link:hover {
+  color: var(--decor-color);
+  border-bottom: 3px solid var(--decor-color);
+}
+.main {
+  margin-bottom: 52px;
+}
+/* SECTION SERVICE */
+.section-name {
+  text-align: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+.section-name::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 49%;
+  width: 60px;
+  height: 3px;
+  background-color: var(--decor-color);
+}
+.section-slogan {
+  font: 24px/29px "Kaushan", serif;
+  color: var(--title-color);
+}
+.section-title {
+  font: 30px/36px "MontBold", sans-serif;
+  text-transform: uppercase;
+}
+/* SERVICES LIST */
+.service-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0;
+}
+.service-list__item {
+  width: 380px;
+  padding-left: 80px;
+  box-sizing: border-box;
+}
+.service-list__item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 75px;
+}
+.service-list__title {
+  font: 14px/17px "MontReg", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+.service-list__link {
+  font: 15px/24px "RobotoReg", sans-serif;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.service-list__link:hover {
+  color: var(--title-color);
+}
+.service-list__item:nth-child(1) {
+  background: url(../img/alarm.png) no-repeat 30px 20px;
+}
+.service-list__item:nth-child(2) {
+  background: url(../img/line.png) no-repeat 30px 20px;
+}
+.service-list__item:nth-child(3) {
+  background: url(../img/comp.png) no-repeat 30px 20px;
+}
+.service-list__item:nth-child(4) {
+  background: url(../img/book.png) no-repeat 30px 20px;
+}
+.service-list__item:nth-child(5) {
+  background: url(../img/HOME.png) no-repeat 30px 20px;
+}
+.service-list__item:nth-child(6) {
+  background: url(../img/image.png) no-repeat 30px 20px;
+}
+/* SECTION TEAM */
+.team {
+  margin-top: 70px;
+}
+.team-desc {
+  font: 15px/24px "RobotoReg", sans-serif;
+  color: var(--text-color);
+  text-align: center;
+  padding: 0 70px;
+  margin-bottom: 90px;
+}
+.team-list {
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.team-list__item {
+  width: 380px;
+  text-align: center;
+}
+.team-list__img {
+  background-color: var(--main-color);
+  height: 470px;
+  position: relative;
+}
+/* MEMBER */
+.member-pic {
+  display: block;
+  transition: all 200ms linear;
+}
+.member-name {
+  font: 14px/17px "MontReg", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: var(--title-color);
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+.member-who {
+  font: 15px/24px "RobotoLI", sans-serif;
+  color: var(--text-color);
+}
+/* MODAL WINDOW SOCIAL BOX */
+.social-box {
+  position: absolute;
+  z-index: 10;
+  background-image: var(--social-gradient);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 200ms linear;
+}
+.social-list {
+  list-style: none;
+  display: flex;
+  transform: scale(0);
+  transition: transform 0.2s linear;
+}
+.social-list__item {
+  box-sizing: border-box;
+  width: 57px;
+  height: 57px;
+  margin: 0 1px;
+  background-color: var(--social-background);
+}
+.social-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.fb {
+  background: url(../img/facebook.png) no-repeat center;
+}
+.tw {
+  background: url(../img/twitter.png) no-repeat center;
+}
+.pin {
+  background: url(../img/pinterest.png) no-repeat center;
+}
+.inst {
+  background: url(../img/instagram.png) no-repeat center;
+}
+/* HOVER SOCIAL */
+.team-list__img:hover .social-box {
+  opacity: 1;
+  transform: translate(-10px, -10px);
+  transition: all 200ms linear;
+}
+.team-list__img:hover .member-pic {
+  transform: translate(-10px, -10px);
+  transition: all 200ms linear;
+}
+.team-list__img:hover .social-list {
+  transform: scale(1);
+  transition: transform 0.2s linear;
+}
+.social-list__item:hover {
+  border: 2px solid #fff;
+  background-color: var(--main-color);
+}
+/* FOOTER */
+.footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 10px 0;
+  justify-content: space-between;
+  font: 14px/17px "MontReg", "Arial", sans-serif;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+.mark {
+  color: var(--decor-color);
+}
+[type="email"] {
+  padding: 9px 27px;
+}
+.button {
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--main-color);
+  padding: 11px 32px;
+  font: 14px/17px "MontBold", sans-serif;
+  color: white;
+}

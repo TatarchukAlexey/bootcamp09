@@ -1,0 +1,52 @@
+.box{
+    width: 900px;
+    min-height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0;
+}
+.main-header{
+    display: flex;
+    justify-content: space-around;
+}
+ .logo-div{
+    width: 50px;
+    padding-left: 10px;
+}     
+nav {
+    margin-left: auto;  
+}
+a{
+    text-decoration: none; 
+    text-transform: uppercase;
+    color: aqua;
+}
+.nav-item:hover{
+    color: rgb(230, 16, 16);    
+} 
+.nav-list:not(:last-child){
+    margin-right: 25px;
+}
+.desc{
+    text-align: center;
+    
+}
+/* /seaction1 */
+.we-work{
+    display: flex;
+    flex-direction: column;
+}
+.desk-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0;
+}
+.service-list__title{
+    width: 50px;
+    height: 50px;
+  
+}

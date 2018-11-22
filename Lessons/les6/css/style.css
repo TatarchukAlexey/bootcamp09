@@ -1,0 +1,42 @@
+.loyer__fon{
+background: url(../img/fon-photo.png) no-repeat;
+   background-size: cover;
+   min-height: 1075px;
+
+}
+.loyer__container{
+    width: 900px;
+    margin: 0 auto;
+}
+.loyer__img{
+    padding-top: 14px;
+    width: 70px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+.name{
+    padding-top: 14px;
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    color: #fff;
+
+}
+.text{
+    font-size: 15px;
+    padding-top: 14px;
+    width: 330px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+
+}
+.loyer__imgdown{
+    margin: 0 auto;
+    width: 50px;
+    padding-top: 40px;
+    padding-bottom: 5px;
+
+}
