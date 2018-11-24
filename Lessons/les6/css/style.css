@@ -1,42 +1,47 @@
-.loyer__fon{
-background: url(../img/fon-photo.png) no-repeat;
-   background-size: cover;
-   min-height: 1075px;
-
+.loyer__fon {
+  background: url(../img/Layer\ 8@1X.png) no-repeat;
+  background-size: 100%;
+  min-height: 1075px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.loyer__container{
-    width: 900px;
-    margin: 0 auto;
+.loyer__container {
+  width: 900px;
+  margin: 0 auto;
+  position: absolute;
 }
-.loyer__img{
-    padding-top: 14px;
-    width: 70px;
-    margin: 0 auto;
-    padding-top: 50px;
-
+.loyer__img {
+  padding-top: 14px;
+  width: 70px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
-.name{
-    padding-top: 14px;
-    width: 200px;
-    margin: 0 auto;
-    padding-top: 20px;
-    color: #fff;
-
+.loyer__name {
+  margin: 0 auto;
+  padding-top: 30px;
+  color: #fff;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 54px;
+  text-transform: uppercase;
 }
-.text{
-    font-size: 15px;
-    padding-top: 14px;
-    width: 330px;
-    margin: 0 auto;
-    padding-top: 30px;
-    font-family: 'Lato', sans-serif;
-    color: #fff;
-
+.loyer__text {
+  font-size: 15px;
+  padding-top: 14px;
+  width: 45%;
+  margin: 0 auto;
+  padding-top: 30px;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  line-height: 29px;
+  text-align: center;
 }
-.loyer__imgdown{
-    margin: 0 auto;
-    width: 50px;
-    padding-top: 40px;
-    padding-bottom: 5px;
-
+.loyer__imgdown {
+  margin: 0 auto;
+  width: 50px;
+  padding-top: 150px;
+  padding-bottom: 90px;
+  
 }
