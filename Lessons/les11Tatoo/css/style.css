@@ -1,0 +1,108 @@
+*{
+  margin: 0;padding: 0;
+}
+body{
+  display: grid;
+  grid-template-areas: 
+  "header header header header header header"
+  "about-us about-us about-us about-us-text about-us-text about-us-text"
+  "pictures1 pictures2 pictures3 pictures4 pictures5 pictures6"
+  "pictures7 pictures8 pictures9 pictures10 pictures11 pictures12";
+  grid-template-rows: 500px 500px 250px 250px;
+  grid-template-columns: repeat(6, 250px);
+  margin: 0 auto;
+
+}
+.header{
+  grid-area: header;
+  background: url(../img/1X.jpeg); 
+}
+.nav{ 
+  display: flex;
+  justify-content: center;
+}
+.list-menu{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  height: 40px;
+  align-items: center;
+  padding-top: 75px;
+}
+.list-menu-link{
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 30px;
+  color: black;
+  text-transform: uppercase;
+}
+.logo{
+  width: 280px;height: 170px;
+}
+.about-us{
+  grid-area: about-us;
+  background: url(../img/2X.jpeg) no-repeat center;
+  height: 100%;
+  object-fit: cover;
+  position: relative; 
+}
+.phrase{
+  position: absolute;
+  border: 7px solid #000;
+  transform: translate(-50%, -30%);
+  top: 50%;
+  right: 10%;
+  display: flex;
+  text-transform: uppercase;
+  padding: 28px 60px;
+  font-size: 36px;
+  overflow: hidden;
+}
+.left{
+  background-color: #F2EFE7;
+}
+.about-us-text{
+  grid-area: about-us-text;
+  background: #F2EFE7 url(../img/tattoo\ design.png) no-repeat 254px 143px;
+  padding: 224px 83px;
+}
+.text1{
+  font-weight: 700;
+
+}
+.pictures:nth-child(1){
+  grid-area: pictures1;
+}
+.pictures:nth-child(2){
+  grid-area: pictures2;
+}
+.pictures:nth-child(3){
+  grid-area: pictures3;
+}
+.pictures:nth-child(4){
+  grid-area: pictures4;
+}
+.pictures:nth-child(5){
+  grid-area: pictures5;
+}
+.pictures:nth-child(6){
+  grid-area: pictures6;
+}
+.pictures:nth-child(7){
+  grid-area: pictures7;
+}
+.pictures:nth-child(8){
+  grid-area: pictures8;
+}
+.pictures:nth-child(9){
+  grid-area: pictures9;
+}
+.pictures:nth-child(10){
+  grid-area: pictures10;
+}
+.pictures:nth-child(11){
+  grid-area: pictures11;
+}
+.pictures:nth-child(12){
+  grid-area: pictures12;
+}
