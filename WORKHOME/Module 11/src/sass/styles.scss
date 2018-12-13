@@ -1,0 +1,27 @@
+// NORMALIZE
+@import "./helpers/normalize.scss";
+// FONTS
+@import "./helpers/fonts.scss";
+// VAR
+@import "./helpers/variables.scss";
+// MIXINS
+@import "./helpers/mixins.scss";
+// PLACEHOLDERS
+@import "./helpers/placeholders.scss";
+
+
+//***********************************************
+//---------- COMMON STYLE
+@import "./common.scss";
+
+// ---------- HEADER
+@import "./header.scss";
+
+// ---------- SECTION SERVICE 
+@import "./service.scss";
+
+// ---------- SECTION TEAM  
+@import "./team.scss";
+
+// ---------- FOOTER
+@import "./footer.scss";  

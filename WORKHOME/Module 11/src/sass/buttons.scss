@@ -1,0 +1,8 @@
+// header button
+.more{
+    @extend %button-clear;
+    @include font("MontBold", 14px, #fff);
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+}

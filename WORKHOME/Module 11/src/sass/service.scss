@@ -1,0 +1,52 @@
+.service{
+  padding-top: 10px;
+}
+.service-list {
+  @extend %clear-list;
+  @include flex();
+}
+
+.service-list__item {
+  width: 385px;
+  padding-left: 90px;
+  box-sizing: border-box;
+  margin-bottom: 65px;
+  position: relative;
+
+  &::before {
+    @extend %pseudo;
+    left: 30px;
+    top: 15px;
+    width: 32px;
+    height: 32px;
+  }
+}
+.service-list__item:nth-child(1)::before {
+  @include background("../images/sprite/alarm.svg");
+}
+.service-list__item:nth-child(2)::before {
+  @include background("../images/sprite/line.svg");
+}
+.service-list__item:nth-child(3)::before {
+  @include background("../images/sprite/comp.svg");
+}
+.service-list__item:nth-child(4)::before {
+  @include background("../images/sprite/book.svg");
+}
+.service-list__item:nth-child(5)::before {
+  @include background("../images/sprite/house.svg");
+}
+.service-list__item:nth-child(6)::before {
+  @include background("../images/sprite/image.svg");
+}
+
+.service-list__item:not(:nth-child(3n + 3)) {
+  margin-right: 20px;
+}
+.service-list__title {
+  @include font("MontReg", 14px, $title-color);
+  text-transform: uppercase;
+}
+.service-list__desc {
+  @include font("RobotoReg", 15px, $text-color);
+}

@@ -1,0 +1,23 @@
+@mixin background($path, $size: cover, $repeat: no-repeat, $position: center) {
+  background: url($path) $repeat $position;
+  background-size: $size;
+}
+
+@mixin font($ffamily, $fsize, $color) {
+  font-family: $ffamily, sans-serif;
+  font-size: $fsize;
+  color: $color;
+}
+
+@mixin flex(
+  $direction: row,
+  $justify: flex-start,
+  $align: stretch,
+  $wrap: wrap
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}

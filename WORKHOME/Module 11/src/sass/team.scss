@@ -1,0 +1,129 @@
+// description section
+.team-desc {
+  width: 980px;
+  text-align: center;
+  @extend %center;
+  @include font("RobotoReg", 15px, $text-color);
+  margin-bottom: 90px;
+}
+
+.team-list {
+  @extend %clear-list;
+  @include flex();
+  text-align: center;
+}
+// item and hover on it
+.team-list__item {
+  width: 380px;
+
+  &:hover .team-list__face {
+    transform: translate(-10px, -10px);
+    transition: all 0.2s linear;
+  }
+  &:hover .team-social-box {
+    transform: translate(-10px, -10px);
+    opacity: 1;
+    transition: all 0.2s linear;
+  }
+  &:hover .team-social__item:nth-child(1) {
+    transform: scale(1);
+    transition: all 0.2s linear;
+  }
+  &:hover .team-social__item:nth-child(2) {
+    transform: scale(1);
+    transition: all 0.2s linear 0.1s;
+  }
+  &:hover .team-social__item:nth-child(3) {
+    transform: scale(1);
+    transition: all 0.2s linear 0.2s;
+  }
+  &:hover .team-social__item:nth-child(4) {
+    transform: scale(1);
+    transition: all 0.2s linear 0.3s;
+  }
+}
+
+.team-list__item:nth-child(2) {
+  margin: 0 30px;
+}
+// background member, wrapper for image and social
+.team-img__wrap {
+  background-color: $team-card-bg;
+  height: 470px;
+  position: relative;
+}
+
+// member picture
+.team-list__face {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: all 0.4s linear;
+}
+
+// social-box wrap for social list
+.team-social-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: $gradient;
+  z-index: 10;
+  @include flex($justify: center, $align: center);
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+// social list
+.team-social_list {
+  @extend %clear-list;
+  @include flex($justify: center);
+}
+.team-social__item {
+  width: 57px;
+  height: 57px;
+  background-color: $active-menu-item;
+  margin: 1px;
+
+  &:hover {
+    background-color: $active-color;
+  }
+  &:hover .team-social-icon {
+    fill: #fff;
+  }
+}
+.team-social__link{
+  display: block;
+}
+// hover position for items
+.team-social__item:nth-child(1) {
+  transform: scale(0);
+  transition: all 0.1s linear 0.3s;
+}
+.team-social__item:nth-child(2) {
+  transform: scale(0);
+  transition: all 0.1s linear 0.2s;
+}
+.team-social__item:nth-child(3) {
+  transform: scale(0);
+  transition: all 0.1s linear 0.1s;
+}
+.team-social__item:nth-child(4) {
+  transform: scale(0);
+  transition: all 0.1s linear;
+}
+// style for svg icon
+.team-social-icon {
+  position: relative;
+  top: 10px;
+  fill: $active-color;
+  width: 32px;
+  height: 32px;
+}
+
+// team member data
+.team-list__name {
+  @include font("MontReg", 14px, $title-color);
+  text-transform: uppercase;
+}
+.team-list__who {
+  @include font("RobotoLightItalic", 15px, $title-color);
+}
