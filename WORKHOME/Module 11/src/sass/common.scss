@@ -1,0 +1,43 @@
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 5px 0 25px;
+}
+
+.wrapper {
+  min-height: 1000px;
+  @include background("../images/background.jpg", cover);
+}
+.wrapper-bg {
+  min-height: 1000px;
+  background: $gradient;
+}
+.main{
+  margin-bottom: 70px;
+}
+// style for label section
+.label {
+  width: 50%;
+  @extend %center;
+  text-align: center;
+  position: relative; 
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+
+  &::before {
+    @extend %pseudo;
+    width: 10%;
+    height: 5px;
+    background-color: $active-color;
+    bottom: 0;
+    left: 45.5%;
+  }
+}
+
+.label__desc {
+  @include font("KaushanScript", 24px, $title-color);
+}
+.label__title {
+  @include font("MontBold", 30px, $title-color);
+  text-transform: uppercase;
+}

@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face{
+font-family: "armata-v9-latin-regular";
+  src: url(../fonts/armata-v9-latin-regular.ttf);
+}
+ 
+header{
+  background-color: #1b1b1c;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid #2096da;
+
+}
+h1{
+  padding: 34px 15px;
+  background-color: #2096da;
+  min-width: 80px;
+  margin-left: 120px;
+  text-align: center;
+
+}
+.header-logo{
+  color: #fff;
+  text-decoration: none;
+}
+.header-box{
+  width: 580px;
+  height: 95px;
+  padding-right: 55px;
+
+}
+.social{
+  display: flex;
+  margin-bottom: 61px;
+  justify-content: center;
+}
+.call{
+  font-size: 10px;
+  padding: 5px 0;
+  color: #fff;
+}
+.header-social{
+  display: flex;
+  list-style: none;
+
+}
+.header-social-list{
+  display: flex;
+  list-style: none;
+  color: #fff;
+  margin-left: 10px;
+}
+.header-social-link{
+  height: 25px;
+  width: 25px; 
+}
+.one{
+  background: #2d2d2e url(../img/facebook@1X.jpeg) no-repeat center;
+  border-radius: 50%;
+}
+.two{
+  background: #2d2d2e url(../img/rss@1X.jpeg) no-repeat center;
+  border-radius: 50%;
+}
+.three{
+  background: #2d2d2e url(../img/twitter@1X.jpeg) no-repeat center;
+  border-radius: 50%;
+}
+.four{
+  background: #2d2d2e url(../img/099336-glossy-black-icon-social-media-logos-myspace-logo@1X.jpeg) no-repeat center;
+  border-radius: 50%;
+}
+.five{
+  background: #2d2d2e url(../img/099291-glossy-black-icon-social-media-logos-digg-logo@1X.jpeg) no-repeat center;
+  border-radius: 50%;
+}
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+   color: #fff;
+}
+.header-nav-list{
+  list-style: none;
+  font-size: 18px;
+}
+.header-nav-link{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: "armata-v9-latin-regular";
+  text-transform: uppercase;
+
+}
+
+/* grid */
+.container{
+  width: 968px;
+  display: grid;
+  grid-template-columns:repeat(4, 24.25%);
+  grid-template-rows: repeat(5, 15.25%) ;
+  grid-gap: 2%;
+  background-color: #272727;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.grid-item{
+  background-color: #403f3f;
+  overflow: hidden;
+}
+img{
+  height: 100%;
+}

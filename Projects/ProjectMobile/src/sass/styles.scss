@@ -1,0 +1,139 @@
+/*
+   Import partials below
+*/
+@import './normalize';
+header{
+   max-width: 320px;
+}
+.logo-menu{
+   display: flex;
+   justify-content: space-around;
+   padding-top: 14px;
+   align-items: center;
+   position: relative;
+}
+// .menu{
+//    ;
+// }
+.hidden-menu{
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: #fff;
+   width: 80%;
+}
+.menu:hover .hidden-menu{
+   display: block;
+}
+.superstar{
+   position: relative;
+}
+
+.superstar:before{
+   display: block;
+   content: "";
+   width: 60px;
+   height: 75px;
+   background: url(../images/Screenshot1.png) no-repeat center;
+   top: 21px;
+   left: 29px;
+   position: absolute;
+   border-radius: 50%;
+   
+}
+.superstar-name{
+   margin: 3% 3%;
+   padding-top: 100px;
+}
+.mail{
+   margin: 3% 3%;
+}
+.menu-list{
+   list-style: none;
+}
+.menu-list__item{
+  margin: 7% 3%; 
+}
+.menu-list__link{
+   text-decoration: none;
+   color: #000;
+}
+.last{
+   margin-bottom: 15%;
+}
+.wraper{
+   padding-bottom: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wraper{
+   color: #fcfdfd;
+   background: url(../images/alex-kotliarskyi-361099-unsplash.png) no-repeat center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+}
+.wraper-title{
+   margin: 0 auto;
+   width: 90%;
+   text-align: center;
+   padding: 0 10px;
+   font-size: 30px;
+   color: rgba(255, 255, 255, 255);
+    text-align: center;
+    padding-top: 50px;
+
+}
+.wraper-text{
+   width: 90%;
+   text-align: center;
+   font-size: 16px;
+   color: rgba(255, 255, 255, 255);
+    text-align: center;
+   margin: 5% auto;
+}
+button{
+   width: 83%;
+   background-color: #ec6b0e;
+   color: #fff;
+   margin: 10% auto;
+   padding: 15px 0;
+   font-size: 20px;  
+}
+

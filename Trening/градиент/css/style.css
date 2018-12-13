@@ -1,36 +1,39 @@
-.wrapper{
-  width: 300px;
-  height: 200px;
-  background-color:red;
-   margin: 0 auto;
-   position: relative;
-   overflow: hidden;
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
 
-}
-.trans{
-  width: 150px;
-  height: 200px;
-  background-color:rgb(122, 122, 122);
-  top: 0;
-  left: 0;
-  position: absolute;
-  margin-left: -150px;
-  transition: all .5s linear;
- } 
-.trans2{
-  width: 150px;
-  height: 200px;
-  background-color:rgb(49, 37, 121);
-    right: -50%;
-  position: absolute; 
-  transition: all .5s linear;
-}
-.wrapper:hover .trans{ 
-  left: 50%;
-  transition: all .5s linear;
-}
-.wrapper:hover .trans2{ 
-  right: 0;
-  transition: all .5s linear;
+table{
+  border: 2px solid #ddd;  
+  margin: auto;
 }
 
+.separate {
+   /* значение по умолчанию */
+  border-collapse: separate;
+}
+
+.collapse {
+  border-collapse: collapse;
+}
+
+td{
+  border: 2px solid #ccc;  
+}
+td:nth-of-type(2) {
+  border: 2px dashed #ccc; 
+}
+
+.wrapper {
+  width: 360px;
+  padding: 0 0 30px;
+  margin: 10px;
+  font-family: 'Bad Script', cursive;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  color: #ddd;
+}

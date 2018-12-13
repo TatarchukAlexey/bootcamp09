@@ -1,0 +1,79 @@
+*{
+  margin: 0;padding: 0;
+}
+.section{
+  margin: 0 auto;
+  width: 320px;
+}
+.header{
+  margin-bottom: 50px;
+}
+.header-title{
+font-size: 40px;
+color: rgba(34, 34, 34, 255);
+text-align: center;
+margin-bottom: 15px;
+}
+.header-title-text{
+font-size: 16px;
+color: rgba(119, 119, 119, 255);
+text-align: center;
+}
+.wraper{
+  margin-left: 15px;
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  
+}
+.wraper-item{
+  position: relative;
+  margin-bottom: 86px;
+  
+}
+photo{
+  position: absolute;
+}
+.july-wraper-text{
+  position: absolute;
+  top: 0;
+  width: 320px;
+}
+ .left{
+  left: -162%;
+  text-align: right;
+}
+.right{
+  right: -162%;
+  text-align: left;
+}
+/* С помощью чайлда убрали последнию палочку! */
+.wraper-item:not(:last-child)::after{
+content: "";
+height: 93px;
+width: 3px;
+background-color: #f1f1f1;
+position: absolute;
+right: 53%;
+bottom: -47%;
+} 
+.yeloy{
+  width: 88px;
+  position: absolute;
+  top: 19%;
+  left: 22%;
+  font-size: 18pt;
+  color: rgba(255, 255, 255, 255);
+ text-align: center;
+ }
+.go{
+  box-shadow: 3px 3px 3px 3px #f1f1f1;
+  border-radius: 50%;
+  margin-left: 9px;
+}
+
+
+
+
+
+

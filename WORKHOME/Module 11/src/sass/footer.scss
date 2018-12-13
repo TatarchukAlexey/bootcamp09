@@ -1,0 +1,31 @@
+.footer {
+  @include flex($justify: space-between, $align: baseline);
+  padding: 10px 0;
+  border-top: 1px solid #e5e5e5;
+}
+.mark {
+  color: $active-color;
+}
+.footer-copyr {
+  @include font("MontReg", 14px, $title-color);
+  letter-spacing: 1px;
+}
+
+.footer-form {
+  @include flex();
+}
+[type="email"]{
+  padding-left: 30px;
+}
+[type="email"]::placeholder {
+  @include font("RobotoLightItalic", 15px, #e5e5e5);
+  padding: 0 10px;
+}
+
+.footer-button {
+  @extend %button-clear;
+  background-color: $team-card-bg;
+  text-transform: uppercase;
+  @include font("MontBold", 14px, #fff);
+  padding: 13px 35px;
+}

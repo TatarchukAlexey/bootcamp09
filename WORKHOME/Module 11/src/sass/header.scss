@@ -1,0 +1,81 @@
+.header-top {
+  @include flex(row, space-between, baseline);
+  margin-bottom: 145px;
+}
+
+.header-logo {
+  @include font("MontBold", 30px, #fff);
+}
+
+.header-logo__link {
+  @extend %clear-link;
+}
+
+.header-list {
+  @extend %clear-list;
+  @include flex(row, space-between);
+}
+
+.header-list__item {
+  border-bottom: 3px solid transparent;
+
+  &:hover .header-list__link {
+    color: $active-menu-item;
+  }
+
+  &:hover:not(:nth-last-child(-n + 2)) {
+    border-bottom: 3px solid $active-menu-item;
+  }
+
+  &:hover .header-list--icon {
+    fill: $active-menu-item;
+  }
+}
+
+.header-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-list__link {
+  @extend %clear-link;
+  @include font("MontReg", 14px, #fff);
+  text-transform: uppercase;
+}
+
+.header-list--icon {
+  display: block;
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+// header title
+.header__desc {
+  @include font("KaushanScript", 72px, #fff); 
+  margin: 0 0 25px;
+}
+.header__title {
+  width: 85%;
+  @include font("MontBold", 150px, #fff); 
+  margin: 0 auto 55px;
+  text-transform: uppercase;
+}
+
+// header button
+.more {
+  @extend %button-clear;
+  @include font("MontBold", 14px, #fff);
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: $active-color;
+    transition: all 0.2s linear;
+  }
+}
+
+.header-bottom {
+  text-align: center;
+}

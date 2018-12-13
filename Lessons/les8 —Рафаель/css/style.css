@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "MyriadPro-Cond";
+  src: url(../fonts/MyriadPro-Cond.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/* /main/ */
+/* <!-- /section2/ --> */
+.raphael {
+  width: 800px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px;
+}
+.title-rafael {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #e74c3c;
+  padding-right: 40px;
+  margin-bottom: 15px;
+}
+.text1 {
+  text-align: center;
+}
+.raf-list {
+  width: 970px;
+  display: flex;
+  justify-content: space-between;
+  margin: 54px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.raf-list-item {
+  width: 257px;
+  text-align: justify;
+  padding-top: 100px;
+}
+.pan {
+  background: url(../img/Icon.png) no-repeat center top;
+}
+.centre {
+  background: url(../img/Icon.2png.png) no-repeat center top;
+}
+.ice {
+  background: url(../img/Icon3.png) no-repeat center top;
+}
+.title-box {
+  color: #e74c3c;
+  text-align: center;
+}
+.raf-list-text {
+  line-height: 26px;
+}
+/* <!-- /section3/ --> */
+.photo4 {
+  width: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 100px;
+}
+.photo-item {
+  width: 300px;
+  height: 200px;
+  background: #e74c3c;
+  margin-left: 160px;
+  margin-top: 54px;
+}
+.stranic {
+  background: url(../img/Photo\ by\ mars_.png);
+  background-size: cover;
+}
+.buda {
+  background: url(../img/Photo\ by\ Daniel\ Chodusov.png) no-repeat center;
+  background-size: 100%;
+}
+.floures {
+  background: url(../img/Photo\ by\ Daniel\ Chodusov-2.png) no-repeat center;
+  background-size: 100%;
+}
+.monaxi {
+  background: url(../img/Photo\ by\ Daniel\ Chodusov-3.png) no-repeat center;
+  background-size: 100%;
+}
+.photo-item {
+  position: relative;
+  overflow: hidden;
+}
+.photo-item:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #8080808c;
+  position: absolute;
+}
+.photo-item:hover::after {
+  display: none;
+}
+
+.photo-before {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 24%;
+  padding-top: 10px;
+  bottom: 0;
+  color: #fff;
+  background-color: #e74c3c;
+  padding-left: 18px;
+}
+.title-before {
+  font-size: 20px;
+}
+.text-before {
+  font-size: 12px;
+}
+.photo-item:before {
+  display: none;
+  content: "";
+  width: 32px;
+  height: 29px;
+  background: #e74c3c url(../img/lupa.png) no-repeat center;
+  top: 15px;
+  left: 244px;
+  position: absolute;
+}
+.photo-item:hover .photo-before,
+.photo-item:hover::before {
+  display: block;
+}
+.section-link {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  background: #e74c3c url(../img/strelka.png) no-repeat right 14px center;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 15%;
+  border-radius: 9px;
+  box-shadow: 0 0 0 2px #e74d3c5d;
+}
+.section-link:hover {
+  width: 11%;
+  transition-duration: 0.5s;
+}
+/* /section3/ */
+
+.get {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.get-in {
+  width: 620px;
+  margin: auto;
+  font-size: 60px;
+  padding-top: 70px;
+  text-align: center;
+  color: #e74c3c;
+}
+.form {
+  width: 770px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 37px auto;
+  
+}
+.input {
+  margin-left: 1px;
+  font-size: 30px;
+  width: 370px;
+  height: 70px;
+  background-color: rgb(169, 169, 169);
+
+}
+.help {
+  font-size: 30px;
+  width: 768px;
+  height: 254px;
+  padding:  1px 3px;
+  margin-top: 5px;
+  background-color: rgb(169, 169, 169);
+  padding: 31px 0 0 31px;
+}
+.button{
+  margin: 20px auto;
+  padding: 15px 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* <footer> */
+
+footer{
+  height: 250px;
+  background-color: #e74c3c;
+}
+.twiter{
+  background: #fff url(../img/twitter.png) no-repeat center; 
+}
+.face{
+  background:  #fff url(../img/facebook.png) no-repeat center;
+}
+.social-wrap a{
+  width: 100px;height: 100px;
+  border: 3px solid #e74c3c;
+  display: inline-block;
+  position: relative;
+  top: -15px; 
+}
+.social-wrap{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+
+}

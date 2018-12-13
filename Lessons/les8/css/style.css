@@ -1,0 +1,33 @@
+/* *{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  background-color: blue;
+  width: 700px;
+  margin: 0 auto;
+}
+.menu{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fff;
+  margin: 0;
+  list-style: none;
+  padding: 0px;
+  border: 1px solid rgb(48, 5, 128);
+  
+}
+.menu-item{
+  padding: 15px;
+}
+.menu-item:hover{
+  color: rgb(55, 1, 204);
+  background-color: #fff;
+} */
+
+body{
+  height: 500px;
+}
+

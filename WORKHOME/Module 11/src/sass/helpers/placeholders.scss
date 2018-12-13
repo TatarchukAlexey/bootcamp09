@@ -1,0 +1,30 @@
+%clear-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%clear-margin {
+  margin: 0;
+}
+
+%center {
+  margin: 0 auto;
+}
+
+%clear-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+%pseudo {
+  content: "";
+  position: absolute;
+}
+
+%button-clear {
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
