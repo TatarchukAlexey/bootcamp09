@@ -20,32 +20,24 @@
       в массив чисел не нужно, после чего снова пользователю предлагается ввести число в prompt.
 */
 
-// // Проблема не запускается второй цыкл
 
-// let userInput;
-// const numbers = [];
-// let total = 0;
+let userInput;
+const numbers = [];
+let total = 0;
 
-// do{
-//  userInput = prompt("Введите число");
-//  numbers.push(Number(userInput));
-// //  console.log(numbers);
-//  }while(userInput!==null)
+do{
+ userInput = prompt("Введите число");
+ numbers.push(Number(userInput));
+ }while(userInput!==null)
 
-//  numbers.pop();
+ numbers.pop();
 
-// console.log(numbers);
+console.log(numbers);
 
-
-// // for (let i=0; i< numbers.length;i++){
-// //  total = total+numbers[i];
-// //  console.log(total, numbers[i]); 
-// // }
-
-// for (let el of numbers){
-//   total += el;
-// }
-// console.log(total);
+for (let el of numbers){
+  total += el;
+}
+console.log(total);
 
 
   // ⚠️ ЗАДАНИЕ ПОВЫШЕННОЙ СЛОЖНОСТИ - ВЫПОЛНЯТЬ ПО ЖЕЛАНИЮ
@@ -78,7 +70,7 @@
 // let attempts = 3;
 // let input;
 
-// // //  второй вариант: работает
+
 // do {
 //   input = prompt("Введите пароль");
    
