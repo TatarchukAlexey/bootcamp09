@@ -856,61 +856,131 @@
 
 ////============================================
 
-const arr = {
-   apple: {
-    price: 5,
-    calor: 4,
-  },
-  orange: {
-    price: 2,
-    calor: 3,
-  }
-}
-const y = arr.apple.price;
-console.log(y);
-const a = arr.orange;
-console.log(a);
+// Тренируемся
+
+// const arr = {
+//    apple: {
+//     price: 5,
+//     calor: 4,
+//   },
+//   orange: {
+//     price: 2,
+//     calor: 3,
+//   }
 
 
+// };
 
-let src = function(){
+// // const y = arr.apple.price;
+// // console.log(y);
+// // const a = arr.orange;
+// // console.log(a);
 
-for(let key in arr){  //////////key это название ключей объектов
-  // console.log(key);   /////////////key это название ключей объектов
-  // console.log(arr[key]); ///arr[key] - это полное описание ключа со значением
-// let y = arr.hasOwnProperty(key);  ///Проверка на есть ли такой ключ
+// const addUser = function (val){  //// такой функцией можно записывать данные в обект от юзера
+//   arr.fruts += val; 
+//    }
+// addUser(150);
+// console.log(arr);
+
+////========================================================
+              //    For ....in для  перебор ключей, никаких for...of
+
+              // Хорошая практика (способ )перебора ключей в объекте: 
+// Поехали:
+// const arr = {
+//    apple: {
+//     price: 5,
+//     calor: 4,
+//   },
+//   orange: {
+//     price: 2,
+//     calor: 3,
+//   },
+//   name: `aaa`,
+// }
+// console.log(arr);
+
+//  for(let key in arr){  //////////key это название ключей объектов
+//  let y = arr.hasOwnProperty(key);  ///Проверка на есть ли такой ключ
+// if (y){
+//   console.log(`${key}: ${arr[key]}`);
+//  }
+
+// console.log(key);   /////////////key это название ключей объектов
+// console.log(arr[key]); ///arr[key] - это полное описание ключа со значением
 // console.log(y);
 // const y = arr[key];
 // console.log(y);
 
-// let x = y.map ( el => el.key );
-// console.log(x); 
+//===================================
+
+// const allKeys = Object.keys(arr);     //метод выводить ключи в масиве
+// console.log(allKeys);
+
+// //=========================================
+// const arr = {
+//    products: [
+//     { name: `apple`, 
+//     price: 5,
+//     calor: 4,
+//   },
+//  { name: `orange`,
+//     price: 2,
+//     calor: 3,
+//   }
+// ],
+//   manag: `aaa`,
+//   name: `Alex`,
+//   new (wr){
+//        arr.products.push(wr);
+//    }
+// }
+// arr.new(`cliebts`);   // способ добовлять в массив елементы-объекты
+// // console.log(arr);
+
+// const arr = {
+//   x: 6,
+// };
+
+// const {
+//   x: 5,
+//    name: `Bob`,
+//   } = arr;
+// console.log(arr);
 
 
 
+///==================================================
+//                  // Слияние объетов
 
+// const a = {name: `jjjjj`, b:5, a: `jfjfjfjj`};
+// const b = {dv: `wwwwww`, b:50,e: `eeeeeeeee`};
+// //////Важно, если встретит такой же ключ то он его перезапишет. Если чсило то поменяет на последнее
+// const qqq = Object.assign(a,b)
+// console.log(qqq);
+
+
+//////========================================
+log x = {
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
 }
-// apple
-// index.js:873 {price: 5, calor: 4}
-// index.js:872 orange
-// index.js:873 {price: 2, calor: 3}
 
-
-
-}
-src();
-// console.log(src);
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
