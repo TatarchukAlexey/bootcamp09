@@ -5,6 +5,7 @@
 // </iframe>
 // youtube search API https://developers.google.com/youtube/v3/docs/search/list
 // yputube key AIzaSyAGwWGzULP4Q9plH7a9ATpZW_8o2ZgJOH8 (edited) 
+// добавить в конце ссылки "q"
 
 let wrap = document.querySelector(`.container`);
 let video = document.querySelector(`.video`);
@@ -16,17 +17,13 @@ fetch(url)
 .then(arr =>{  
     // console.log(arr);  //   получаем artists{artist:[....]}
 let y = arr.tracks.track;    //берем массив и запускаем построение дивов
-
 createList(y);  ///вызываем функцию кот построит нам список артистов
-
 wrap.addEventListener("click",boxVideo)  /// вешаем слушателя на тег
 //  console.log(link.innerHTML);
- 
 })
 .catch(err=>console.log(err));
 }
 window.addEventListener("DOMContentLoaded",boxAudio)
-
 //////////////////////////функция по созданию списка тегов с артистами
 function createList (str){
     let string = str.reduce((acc, el) => acc +  
@@ -38,7 +35,6 @@ function createList (str){
    " ");  
    wrap.innerHTML = string; 
 }
-
 //////////////////////////функция по видео c YouToub
 function boxVideo (e){
     console.log(e.target.textContent);
@@ -50,10 +46,9 @@ function boxVideo (e){
     .then(arr =>{  
         // console.log(arr.items[0].id.videoId);
         let videoID = arr.items[0].id.videoId;
-    
         let str = `
-        <iframe class="iframe" src={https://www.youtube.com/embed/${videoID}?autoplay=1} frameBorder="0" allow="autoplay;
-encrypted-media" allowFullScreen> </iframe>`;
+        <iframe class="iframe" src={https://www.youtube.com/embed/${videoID}?autoplay=1}
+         frameBorder="0" allow="autoplay;encrypted-media" allowFullScreen> </iframe>`;
          video.innerHTML = str;
         //  iframe.style.width = 150px;
     })
