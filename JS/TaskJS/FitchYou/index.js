@@ -51,10 +51,11 @@ function boxVideo (e){
         // console.log(arr.items[0].id.videoId);
         let videoID = arr.items[0].id.videoId;
     
-        let str = `<iframe src={https://www.youtube.com/embed/${videoID}?autoplay=1} frameBorder="0" allow="autoplay;
+        let str = `
+        <iframe class="iframe" src={https://www.youtube.com/embed/${videoID}?autoplay=1} frameBorder="0" allow="autoplay;
 encrypted-media" allowFullScreen> </iframe>`;
-     
-        video.innerHTML = str;
+         video.innerHTML = str;
+        //  iframe.style.width = 150px;
     })
 
     .catch(err=>console.log(err));

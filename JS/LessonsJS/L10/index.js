@@ -27,5 +27,52 @@
 //  Наша задача перевести в JSOn, перед отправкой на сервер
 
 
-// пример
+///////////////====================== Продолжение лекции
+
+// localStorage - это ...хранилище, позволяет хранить пары ключ:значение на
+//  компьютере пользователя и читать их,
+//  когда пользователь снова вернется на страницу.
+
+// localStorage.setItem(`test`, JSON.stringify([1,2,3,4,5]));  ///записует
+// // localStorage.getItem(`test`);  //считует
+// let str = JSON.parse(localStorage.getItem(`test`));    ///считует
+// console.log(str);
+
+// localStorage.setItem(`test`, JSON.stringify(8));  ///перезаписует если есть если нет создат
+
+// localStorage.removeItem(`test`);  /// удаляет 1 элемент 
+
+// localStorage.clear(); ///удаляет все объекты, всю историю , по всему сайту
+
+
+
+////////////////////пример от Вовы
+
+
+
+// let form = document.querySelector ("#form");
+// let selectors = document.querySelectorAll("select");
+// let body = document.querySelector("body");
+
+// function readData(e) {
+//     e.preventDefault();
+//     let settings = {};
+//     selectors.forEach(el => settings[el.name] = el.value);
+//     localStorage.setItem('settings', JSON.stringify(settings));
+//     changeStyle();
+// }
+// console.log(localStorage);
+
+// function changeStyle () {
+//     let obj = JSON.parse(localStorage.getItem('settings'));   ///pfgbcetv
+//     if (!obj){      // если фолс тогда останови функцию
+//         return
+//     }
+//     body.style.color = obj.color;
+//     body.style.fontSize = obj.fontSize + 'px';
+//     body.style.fontFamily = obj.fontFamily;
+// }
+
+// form.addEventListener ("submit", readData);
+// window.addEventListener("DOMContentLoaded", changeStyle);
 
