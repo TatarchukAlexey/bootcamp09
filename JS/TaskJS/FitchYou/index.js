@@ -37,22 +37,23 @@ function createList (str){
 }
 //////////////////////////функция по видео c YouToub
 function boxVideo (e){
-    console.log(e.target.textContent);
-    console.log(e.target.previousElementSibling.textContent);
-    let query = `${e.target.previousElementSibling.textContent} ${e.target.textContent}`
+    // console.log(e.target.textContent);
+    // console.log(e.target.previousElementSibling.textContent);
+    let query = ` ${e.target.textContent}`;
+    console.log(query);
+    
     const url = `https://www.googleapis.com/youtube/v3/search/?part=snippet&key=AIzaSyAGwWGzULP4Q9plH7a9ATpZW_8o2ZgJOH8&maxResults=1&type=video&q=${query}`;
     fetch(url)
     .then(response=>response.json())  
     .then(arr =>{  
-        // console.log(arr.items[0].id.videoId);
+        console.log(arr);
         let videoID = arr.items[0].id.videoId;
         let str = `
-        <iframe class="iframe" src={https://www.youtube.com/embed/${videoID}?autoplay=1}
+        <iframe class="iframe" src="https://www.youtube.com/embed/${videoID}?autoplay=1"
          frameBorder="0" allow="autoplay;encrypted-media" allowFullScreen> </iframe>`;
          video.innerHTML = str;
-        //  iframe.style.width = 150px;
+         
     })
-
     .catch(err=>console.log(err));
     }
 
