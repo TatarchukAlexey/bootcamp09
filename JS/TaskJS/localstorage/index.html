@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>API</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="app" id="app">
+      <form class="form" v-on:submit="addTodo">
+        <input class="input form__input" v-model="inputVal "autofocus />
+        <button class="btn form__submit-btn" type="submit">Add</button>
+      </form>
+      <transition-group tag="ol" name="list" class="todo-list">
+     
+      </transition-group>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
+

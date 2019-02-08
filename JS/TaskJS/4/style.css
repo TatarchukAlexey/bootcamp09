@@ -158,6 +158,7 @@ button{
     margin-top: 25px;
     flex-basis: 10%;
     display: flex;
+    flex-direction: column;
 }
 form{
     margin: 15px auto;
@@ -171,3 +172,7 @@ li{
 span{
     margin-left: 10px;
 }
+
+
+
+

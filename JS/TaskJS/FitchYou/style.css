@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(138, 135, 135);
+}
+.list{
+    width: 40%;
+    height: 100vw;
+    background:#fff;
+    border: 5px solid rgb(19, 18, 18);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.wrap{
+    display: flex;
+    padding: 5px 5px 5px 5px;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding: 25px;
+}
+.nameSing{
+    width: 40px;
+    height: 46px;
+}
+.img{
+    height: 100%;
+
+}
+.link{
+    display: block;
+}
