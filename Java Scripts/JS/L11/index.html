@@ -1,0 +1,120 @@
+<!-- <!DOCTYPE html>
+<html lang="en"> 
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>les11</title>
+</head> 
+<body> 
+        <p>Шаблонизация</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+/// //Шаблон -->
+<!-- <div class="content-placeholder"></div>   
+ <template id="example-template">
+                  <ul>
+                    {{#each people}}
+                      <li>{{firstName}} {{lastName}}</li>
+                     {{/each}}
+                 </ul>
+ </template>
+<script src="./index.js"></script>
+</body> 
+</html> -->
+<!-- --> 
+
+<!-- ==============================/////  Галерея///// -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>les11</title>
+  </head>
+  <body>
+    <h2 class="gallery-title">Gallery</h2>
+    <div class="gallery-content">
+
+</div>
+
+//=============================Шаблон для галереи=============
+< <template id="example-template">
+      <ul>
+{{#each items}}
+<li>
+ <div class="gallery-item">
+        <img class="gallery-img" src="{{img}}" alt="{{text}}">
+        <p class="gallery-text">{{text}}</p>
+</div>
+</li>
+{{/each}}  -->
+<!-- используем или each или reduce -->
+<!-- </ul>
+ </template>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html> -->
+
+<!-- Важно строить разметку можно или each или reduce , -->
+<!-- ///======  Карточка юзера адаптивная с HTML -->
+
+<!-- // //////////(доп 1) Задача №123  составить шаблон/////
+
+ -->
+<!-- <!DOCTYPE html>
+<html lang="en"> 
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>добка1</title>
+</head> 
+<body> 
+   
+    <template id="example-template">
+        <ul class="product">
+          {{#each prod}}   
+          <li>
+            <span class="name">{{this.name}}</span>
+            <span class="count">{{count}}</span>
+          </li>
+          {{/each }}
+        </ul>
+      </template>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+   <script src="./index.js"></script>
+</body> 
+</html> -->
+
+ <!-- // ////////// Задача #654  составить шаблон (допка №2)///// -->
+
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>допка2</title>
+</head> 
+<body> 
+   
+    <template id="example-template">        
+          <div class="posts">
+              <h2 class="title">{{title}}</h2>
+              <p class="text">{{text}}</p>
+              <span class="fav-icon"></span>
+            </div>  
+      </template>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+   <script src="./index.js"></script>
+</body> 
+</html>
+
