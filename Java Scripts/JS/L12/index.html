@@ -4,27 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>допка2</title>
+        <title>JS12</title>
 </head> 
 <body> 
-   
-        <ul>
-                <li>First li</li>
-                <li>
-                  <span>Span in second li</span>
-                  <a href="">Second li link</a>
-                  <p>Text in second li</p>
-                </li>
-                <li>Third li</li>
-        </ul>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<div class="image-gallery js-image-gallery">
+ <div class="fullview">
+   <img src="img/fullview-1.jpeg" alt="alt text 1">
+ </div>
+ <!-- li будет столько, сколько объектов в массиве картинок. Эти 3 для примера -->
+ 
+ <ul class="preview">
+  <li><img src="img/preview-1.jpeg" data-fullview="img/fullview-1.jpeg" alt="alt text 1"></li>
+  <li><img src="img/preview-3.jpeg" data-fullview="img/fullview-3.jpeg" alt="alt text 3"></li>
+ </ul>
+</div>  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
    <script src="./index.js"></script>
 </body> 
 </html>
 
-<!-- <div class="post">
-        <h2 class="title">Post title placeholder</h2>
-        <p class="text">Post text placeholder</p>
-        <span class="fav-icon"></span>
-      </div> -->
