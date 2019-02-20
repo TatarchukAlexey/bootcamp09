@@ -36,6 +36,12 @@ function createList (e){
   .then (res => res.json())
   .then (arr => { 
    
+    if(e.target !== usersButton){  //Логика: если нажимается не целевая кнопка, тогда чистится улка
+      /// если нажимается целевая кнопка тогда проверка останавливается ретерном     
+       ul.innerHTML='';
+       console.log('out');
+       return;            
+     }
     
   const obj = arr.data;
     let string = obj.reduce((acc, el) => acc +  
@@ -51,6 +57,7 @@ function createList (e){
 
  .catch(err=>console.log(err));
 }
+window.addEventListener("click",createList)
 usersButton.addEventListener("click",createList)
 
 //////////================== Функция добовления ID
